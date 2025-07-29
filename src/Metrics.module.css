@@ -1,0 +1,97 @@
+
+.metricsBg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f0ff 0%, #f9f9f9 100%);
+}
+
+.metricsHeader {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: #1976d2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px 18px 32px;
+  z-index: 10;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+}
+
+.metricsLogo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.metricsLogout {
+  background: #fff;
+  color: #1976d2;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+}
+.metricsLogout:hover {
+  background: #1976d2;
+  color: #fff;
+}
+
+.metricsContainer {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 40px 32px 32px 32px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metricsTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.metricsCard {
+  width: 100%;
+  background: #f5faff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.06);
+  padding: 24px 18px;
+  margin-bottom: 18px;
+  min-height: 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.metricsPre {
+  background: transparent;
+  border: none;
+  font-size: 1.15rem;
+  color: #222;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Mono', 'Consolas', 'Menlo', monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.metricsError {
+  color: #d32f2f;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  font-weight: 600;
+}

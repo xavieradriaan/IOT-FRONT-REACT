@@ -1,0 +1,81 @@
+.dashboardBg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f0ff 0%, #f9f9f9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Tarjeta principal mejorada */
+.dashboardCard {
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 12px 48px 0 rgba(25, 118, 210, 0.18), 0 1.5px 8px 0 rgba(25, 118, 210, 0.10);
+  padding: 56px 48px 44px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 380px;
+  max-width: 95vw;
+  gap: 38px;
+  border: 2.5px solid #e3f0ff;
+  position: relative;
+}
+
+.dashboardCard::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #1976d2 60%, #42a5f5 100%);
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(25, 118, 210, 0.18);
+  z-index: 2;
+}
+
+.dashboardCardIcon {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.7rem;
+  color: #fff;
+  z-index: 3;
+  pointer-events: none;
+}
+.dashboardTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1976d2;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+  margin-top: 30px;
+  text-align: center;
+}
+.dashboardButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+  margin-top: 10px;
+}
+.dashboardBtn {
+  background: linear-gradient(90deg, #1976d2 60%, #42a5f5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 18px 0;
+  font-size: 1.18rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.13);
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+.dashboardBtn:hover {
+  background: linear-gradient(90deg, #115293 60%, #1976d2 100%);
+  transform: translateY(-2px) scale(1.04);
+}
