@@ -7,6 +7,7 @@ import {
   Refresh,
   Timeline,
   TrendingUp,
+  EventNote,
 } from '@mui/icons-material';
 import {
   Avatar,
@@ -65,6 +66,14 @@ const Dashboard = () => {
   ];
 
   const navigationCards = [
+    {
+      title: 'Registros de Asistencia',
+      description: 'Visualiza el historial completo de marcaciones biométricas almacenadas en la base de datos.',
+      icon: <EventNote sx={{ fontSize: 40 }} />,
+      path: '/attendance',
+      color: 'success',
+      requiredRole: null,
+    },
     {
       title: 'Métricas del Sistema',
       description: 'Visualiza las métricas en tiempo real de los dispositivos IoT y el rendimiento del sistema.',

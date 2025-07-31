@@ -56,6 +56,8 @@ const AppLayout = ({ children }: AppLayoutProps) => {
     switch (location.pathname) {
       case '/dashboard':
         return 'Dashboard';
+      case '/attendance':
+        return 'Registros de Asistencia';
       case '/metrics':
         return 'Métricas del Sistema';
       case '/grafana':

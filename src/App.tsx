@@ -9,6 +9,7 @@ import Dashboard from './Dashboard';
 import GrafanaDashboard from './GrafanaDashboard';
 import Login from './Login';
 import Metrics from './Metrics';
+import Attendance from './Attendance';
 
 // Create a client for React Query
 const queryClient = new QueryClient({
@@ -46,6 +47,16 @@ function App() {
                     <ProtectedRoute>
                       <AppLayout>
                         <Metrics />
+                      </AppLayout>
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/attendance"
+                  element={
+                    <ProtectedRoute>
+                      <AppLayout>
+                        <Attendance />
                       </AppLayout>
                     </ProtectedRoute>
                   }
